@@ -21,7 +21,6 @@ function attempt(available, allowed, preferred) {
       if (preferredEl < Math.max.apply(null, filtered)) {
         result.push(Math.max.apply(null, filtered))
       } else if (preferredEl >= Math.max.apply(null, filtered)) {
-        // result.push(Math.min.apply(null, filtered))
         const arr = filtered.filter(num => num !== preferredEl);
         result.push(arr[arr.length - 1])
       }
